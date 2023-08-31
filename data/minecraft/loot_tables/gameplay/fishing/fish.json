@@ -12,7 +12,7 @@
               "tag": "{Enchantments:[{id:\"minecraft:fortune\",lvl:10s}]}"
             }
           ],
-          "name": "minecraft:book"
+          "name": "minecraft:enchanted_book"
         }
       ],
       "rolls": 1.0
