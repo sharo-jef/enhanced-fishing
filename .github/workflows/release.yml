@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: |
           npm i
-          npm start
+          npm run build
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
       - uses: actions-ecosystem/action-bump-semver@v1
