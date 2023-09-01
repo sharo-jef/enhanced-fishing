@@ -3,13 +3,13 @@ pools:
 - rolls: 1
   entries:
   - type: minecraft:item
-    weight: 100
+    weight: 1000
     name: minecraft:name_tag
   - type: minecraft:item
-    weight: 100
+    weight: 1000
     name: minecraft:saddle
   - type: minecraft:item
-    weight: 100
+    weight: 1000
     functions:
     - add: false
       damage:
@@ -22,7 +22,7 @@ pools:
       treasure: true
     name: minecraft:bow
   - type: minecraft:item
-    weight: 100
+    weight: 1000
     functions:
     - add: false
       damage:
@@ -35,7 +35,7 @@ pools:
       treasure: true
     name: minecraft:fishing_rod
   - type: minecraft:item
-    weight: 100
+    weight: 1000
     functions:
     - function: minecraft:enchant_with_levels
       levels: 30
@@ -45,11 +45,11 @@ pools:
     weight: 50
     functions:
     - function: minecraft:enchant_with_levels
-      levels: 50
+      levels: 100
       treasure: true
     name: minecraft:book
   - type: minecraft:item
-    weight: 100
+    weight: 1000
     name: minecraft:nautilus_shell
   # Custom entries
   - type: minecraft:item
