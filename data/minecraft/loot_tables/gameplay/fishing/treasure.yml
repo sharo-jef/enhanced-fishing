@@ -79,6 +79,56 @@ pools:
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:sharpness",lvl:9s}]}'
+  - &power
+    <<: *sharpness
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:power",lvl:5s}]}'
+  - <<: *power
+    weight: 4
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:power",lvl:6s}]}'
+  - <<: *power
+    weight: 3
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:power",lvl:7s}]}'
+  - <<: *power
+    weight: 2
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:power",lvl:8s}]}'
+  - <<: *power
+    weight: 1
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:power",lvl:9s}]}'
+  - &efficiency
+    <<: *sharpness
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:5s}]}'
+  - <<: *efficiency
+    weight: 4
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:6s}]}'
+  - <<: *efficiency
+    weight: 3
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:7s}]}'
+  - <<: *efficiency
+    weight: 2
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:8s}]}'
+  - <<: *efficiency
+    weight: 1
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:9s}]}'
   conditions: []
   bonus_rolls: 0
 random_sequence: minecraft:gameplay/fishing/treasure
