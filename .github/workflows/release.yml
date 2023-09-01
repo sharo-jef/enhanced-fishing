@@ -36,6 +36,16 @@ jobs:
         run: |
           npm i
           npm run build
+      - name: Push
+        run: |
+          git config --local user.name "github-actions[bot]"
+          if ! git diff --exit-code --quiet; then
+            git add .
+            git commit -m "Auto build by GitHub Actions"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
       - uses: actions-ecosystem/action-bump-semver@v1
