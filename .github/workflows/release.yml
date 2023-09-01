@@ -34,7 +34,9 @@ jobs:
         with:
           node-version: 20.x
       - name: Build
-        run: npm start
+        run: |
+          npm i
+          npm start
       - uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
       - uses: actions-ecosystem/action-bump-semver@v1
