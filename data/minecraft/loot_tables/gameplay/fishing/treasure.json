@@ -1,8 +1,11 @@
 {
     "type": "minecraft:fishing",
+    "random_sequence": "minecraft:gameplay/fishing/treasure",
     "pools": [
         {
             "rolls": 1,
+            "conditions": [],
+            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -250,10 +253,7 @@
                         }
                     ]
                 }
-            ],
-            "conditions": [],
-            "bonus_rolls": 0
+            ]
         }
-    ],
-    "random_sequence": "minecraft:gameplay/fishing/treasure"
+    ]
 }

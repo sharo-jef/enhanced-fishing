@@ -1,6 +1,9 @@
 type: minecraft:fishing
+random_sequence: minecraft:gameplay/fishing/treasure
 pools:
 - rolls: 1
+  conditions: []
+  bonus_rolls: 0
   entries:
   - type: minecraft:item
     weight: 1000
@@ -129,6 +132,3 @@ pools:
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:9s}]}'
-  conditions: []
-  bonus_rolls: 0
-random_sequence: minecraft:gameplay/fishing/treasure
