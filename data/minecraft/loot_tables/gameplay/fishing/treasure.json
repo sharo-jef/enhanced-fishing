@@ -6,17 +6,17 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 100,
+                    "weight": 1000,
                     "name": "minecraft:name_tag"
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 100,
+                    "weight": 1000,
                     "name": "minecraft:saddle"
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 100,
+                    "weight": 1000,
                     "functions": [
                         {
                             "add": false,
@@ -37,7 +37,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 100,
+                    "weight": 1000,
                     "functions": [
                         {
                             "add": false,
@@ -58,13 +58,8 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 100,
+                    "weight": 1000,
                     "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30,
-                            "treasure": true
-                        },
                         {
                             "function": "minecraft:enchant_with_levels",
                             "levels": 30,
@@ -75,8 +70,20 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 100,
+                    "weight": 1000,
                     "name": "minecraft:nautilus_shell"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 50,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 40,
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:book"
                 },
                 {
                     "type": "minecraft:item",

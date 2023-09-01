@@ -9,7 +9,7 @@ import { parse } from 'yaml';
   .map(file => `${file.path}${sep}${file.name}`)
   .map(async path => ({
     path,
-    JSONObject: parse(await readFile(path, 'utf-8')),
+    JSONObject: parse(await readFile(path, 'utf-8'), { merge: true }),
     JSONPath: path.replace(/\.ya?ml$/, '.json'),
   }))))
   .forEach(data => writeFile(`${data.JSONPath}`, JSON.stringify(data.JSONObject, null, 4)));

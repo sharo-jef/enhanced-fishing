@@ -42,42 +42,39 @@ pools:
       treasure: true
     name: minecraft:book
   - type: minecraft:item
+    weight: 1000
+    name: minecraft:nautilus_shell
+  # Custom entries
+  - type: minecraft:item
     weight: 50
     functions:
     - function: minecraft:enchant_with_levels
       levels: 40
       treasure: true
     name: minecraft:book
-  - type: minecraft:item
-    weight: 1000
-    name: minecraft:nautilus_shell
-  # Custom entries
-  - type: minecraft:item
+  - &sharpness
+    type: minecraft:item
     name: minecraft:enchanted_book
     weight: 5
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:sharpness",lvl:5s}]}'
-  - type: minecraft:item
-    name: minecraft:enchanted_book
+  - <<: *sharpness
     weight: 4
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:sharpness",lvl:6s}]}'
-  - type: minecraft:item
-    name: minecraft:enchanted_book
+  - <<: *sharpness
     weight: 3
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:sharpness",lvl:7s}]}'
-  - type: minecraft:item
-    name: minecraft:enchanted_book
+  - <<: *sharpness
     weight: 2
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:sharpness",lvl:8s}]}'
-  - type: minecraft:item
-    name: minecraft:enchanted_book
+  - <<: *sharpness
     weight: 1
     functions:
     - function: minecraft:set_nbt
