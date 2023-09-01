@@ -47,7 +47,7 @@ pools:
   - type: minecraft:item
     weight: 1000
     name: minecraft:nautilus_shell
-  # Custom entries
+  # ! Custom entries
   - type: minecraft:item
     weight: 50
     functions:
