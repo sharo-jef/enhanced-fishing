@@ -3,7 +3,7 @@ description: File a bug report
 title: "【Bug】"
 labels: ["bug"]
 assignees:
-  - kanisan007
+  - sharo-jef
 body:
   - type: textarea
     id: what-happened
@@ -20,10 +20,7 @@ body:
       multiple: true
       description: バグを確認したバージョンを選択してください。
       options:
-        - 1.19.3 (Recommended)
-        - 1.19.2
-        - 1.19.1
-        - '1.19'
+        - 1.20.1 (Recommended)
     validations:
       required: true
   - type: dropdown
