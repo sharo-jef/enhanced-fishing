@@ -40,8 +40,12 @@ pools:
     - function: minecraft:enchant_with_levels
       levels: 30
       treasure: true
+    name: minecraft:book
+  - type: minecraft:item
+    weight: 50
+    functions:
     - function: minecraft:enchant_with_levels
-      levels: 30
+      levels: 50
       treasure: true
     name: minecraft:book
   - type: minecraft:item
