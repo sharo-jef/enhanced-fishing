@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        if: github.event_name != 'workflow_call'
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
