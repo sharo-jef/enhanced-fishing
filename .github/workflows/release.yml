@@ -36,6 +36,8 @@ jobs:
         run: |
           npm i
           npm run build
+      - name: Lint
+        uses: ./.github/workflows/lint.yml
       - name: Push
         run: |
           git config --local user.name "github-actions[bot]"
