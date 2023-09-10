@@ -132,3 +132,28 @@ pools:
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:9s}]}'
+  - &lure
+    <<: *sharpness
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:lure",lvl:5s}]}'
+  - <<: *lure
+    weight: 4
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:lure",lvl:6s}]}'
+  - <<: *lure
+    weight: 3
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:lure",lvl:7s}]}'
+  - <<: *lure
+    weight: 2
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:lure",lvl:8s}]}'
+  - <<: *lure
+    weight: 1
+    functions:
+    - function: minecraft:set_nbt
+      tag: '{Enchantments:[{id:"minecraft:lure",lvl:9s}]}'
