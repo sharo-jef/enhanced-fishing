@@ -133,7 +133,7 @@ pools:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:efficiency",lvl:9s}]}'
   - &lure
-    <<: *lure
+    <<: *sharpness
     functions:
     - function: minecraft:set_nbt
       tag: '{Enchantments:[{id:"minecraft:lure",lvl:5s}]}'
